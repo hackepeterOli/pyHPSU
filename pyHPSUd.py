@@ -61,6 +61,7 @@ class MainHPSU(object):
             sys.exit(2)
 
         for opt, arg in opts:
+            time.sleep(60)
             if opt in ("-h", "--help"):
                 help = True
             elif opt in ("-d", "--driver"):
