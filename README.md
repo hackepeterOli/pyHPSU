@@ -1,10 +1,6 @@
 1. Hardware Setup (ELM327)
--a Most cheap china replicas will not work because the "AT PP" command is not implemented. A purchase recommendation is as follows: https://www.totalcardiagnostics.com/elm327
-  
-  
-  
-  
-  b. It is recommended to order a matching obd2 socket (16pol) to connect the can adapter
+ 1.1 Most cheap china replicas will not work because the "AT PP" command is not implemented. A purchase recommendation is as follows: https://www.totalcardiagnostics.com/elm327
+ 1.2 It is recommended to order a matching obd2 socket (16pol) to connect the can adapter
   
   
   c. Connect the CAN-High cable 6, the CAN-Low cable 14 and CAN signal ground 5 to the hpsu, Power on the CAN-Side is not needet
