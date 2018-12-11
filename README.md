@@ -16,7 +16,6 @@
 There are the following different possibilities of data export  
 
 2.1 Data Export to CSV:  
-
   a. <code>python3 /usr/bin/pyHPSU_dirty.py -v 2 -d elm327 --port /dev/serial/by-id/usb-FTDI_FT232R_USB_UART_-if00-port0 -c t_hc_set -o CSV</code>  
     
 2.2 Data Export to Emoncms  
