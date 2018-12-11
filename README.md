@@ -1,11 +1,9 @@
-1. Hardware Setup (ELM327)  
-=========================
+#1. Hardware Setup (ELM327)  
 	a. Most cheap china replicas will not work because the "AT PP" command is not implemented. A purchase recommendation is as follows: https://www.totalcardiagnostics.com/elm327  
 	b. It is recommended to order a matching obd2 socket (16pol) to connect the can adapter  
 	c. Connect the CAN-High cable 6, the CAN-Low cable 14 and CAN signal ground 5 to the hpsu, Power on the CAN-Side is not needet  
   
-2. Software Setup (ELM327)
-=========================
+#2. Software Setup (ELM327)
   a. get the id from the usb elm interface: ls /dev/serial/by-id/    
   b. apt-get install python-pika python3-pika python-configparser python3-serial  
   c. git clone https://github.com/Spanni26/pyHPSU  
@@ -15,12 +13,12 @@
   g. test the communication (exchange the id)  
      python3 /usr/bin/pyHPSU_dirty.py -v 2 -d elm327 --port /dev/serial/by-id/usb-FTDI_FT232R_USB_UART_-if00-port0 -c t_hc_set -o CSV  
   
-There are the following different possibilities of data export
-----------------------------------------------------------------
-2.1 Data Export to CSV:
-------------------
+##There are the following different possibilities of data export
+
+##2.1 Data Export to CSV:
+
   a. python3 /usr/bin/pyHPSU_dirty.py -v 2 -d elm327 --port /dev/serial/by-id/usb-FTDI_FT232R_USB_UART_-if00-port0 -c t_hc_set -o CSV  
-2.2 Data Export to Emoncms
+##2.2 Data Export to Emoncms
 --------------
   a. cp -r pyHPSU/etc/pyHPSU/EMONCMS.ini /etc/pyHPSU/emoncms.ini  
   b. Register and note the API key:https://emoncms.org  
