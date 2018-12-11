@@ -20,12 +20,14 @@ There are the following different possibilities of data export
   a. cp -r pyHPSU/etc/pyHPSU/EMONCMS.ini /etc/pyHPSU/emoncms.ini  
   b. Register and note the API key:https://emoncms.org  
   c. Enter Api key in /etc/pyHPSU/emoncms.ini  
-  d. sample config:  
+  d. sample config:
+  <pre><code>
      [config]  
      apikey=xxxxxxxxxxxxxxxxxxxxxxxxxx  
      emoncms_url=https://emoncms.org  
      [node]  
-     Node_30=flow_rate,mode,t_ext,t_hc_set,bpv,posmix,t_dhw_set,door_ot1,t_v1,t_r1,tliq2,t_vbh,t_dhw1,ta2,ehs,qdhw,qch,qchhp,qwp  
+     Node_30=flow_rate,mode,t_ext,t_hc_set,bpv,posmix,t_dhw_set,door_ot1,t_v1,t_r1,tliq2,t_vbh,t_dhw1,ta2,ehs,qdhw,qch,qchhp,qwp 
+     </code></pre>
   e. run pyHPSU:   
      /usr/share/pyHPSU/bin/pyHPSU.py -v 1 -d elm327 --port /dev/serial/by-id/usb-FTDI_FT232R_USB_UART_-if00-port0 -o CLOUD -u EMONCMS  
 3. Data Export to FHEM  
