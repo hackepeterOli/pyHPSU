@@ -11,7 +11,7 @@
   e. chmod +x install.sh  
   f. ./install.sh  
   g. test the communication (exchange the id)  
-     python3 /usr/bin/pyHPSU_dirty.py -v 2 -d elm327 --port /dev/serial/by-id/usb-FTDI_FT232R_USB_UART_-if00-port0 -c t_hc_set -o CSV  
+     <code>python3 /usr/bin/pyHPSU_dirty.py -v 2 -d elm327 --port /dev/serial/by-id/usb-FTDI_FT232R_USB_UART_-if00-port0 -c t_hc_set -o CSV</code>  
   
 There are the following different possibilities of data export  
 
