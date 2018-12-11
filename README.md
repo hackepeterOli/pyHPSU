@@ -1,13 +1,24 @@
 1. Hardware Setup (ELM327)
-  a. Most cheap china replicas will not work because the "AT PP" command is not implemented. A purchase recommendation is as follows:     
-     https://www.totalcardiagnostics.com/elm327
+-a Most cheap china replicas will not work because the "AT PP" command is not implemented. A purchase recommendation is as follows: https://www.totalcardiagnostics.com/elm327
+  
+  
+  
+  
   b. It is recommended to order a matching obd2 socket (16pol) to connect the can adapter
+  
+  
   c. Connect the CAN-High cable 6, the CAN-Low cable 14 and CAN signal ground 5 to the hpsu, Power on the CAN-Side is not needet
+  
 2. Software Setup (ELM327)
+
   a. get the id from the usb elm interface: ls /dev/serial/by-id/
+  
   b. apt-get install python-pika python3-pika python-configparser python3-serial
+  
   c. git clone https://github.com/Spanni26/pyHPSU
+  
   d. cd pyHPSU
+  
   e. chmod +x install.sh
   f. ./install.sh
   g. test the communication (exchange the id)
